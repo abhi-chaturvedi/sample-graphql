@@ -1,7 +1,6 @@
 const {gql} = require('apollo-server')
 
 const types = gql`
-
     type User {
         _id : ID!
         firstName : String!
@@ -11,12 +10,17 @@ const types = gql`
         todo : [Todo!]
     }
 
+    input Pagination {
+        page : Int!
+        limit : Int!
+    }
+
     type Query {
-        user : [User]
+        user(pagination : Pagination!) : [User]
         singleUser(_id : ID!): User
     }
 
-    type Mutation{
+    type Mutation {
         createUser(user : CreateUser!) : User!
     }
 

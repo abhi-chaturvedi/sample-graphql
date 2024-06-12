@@ -1,0 +1,22 @@
+{
+  "name": "samplegql",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.4",
+    "apollo-server": "^3.13.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^14.7.0",
+    "http-errors": "~1.6.3",
+    "merge-graphql-schemas": "^1.7.8",
+    "mongoose": "^8.4.1",
+    "morgan": "~1.9.1"
+  }
+}
